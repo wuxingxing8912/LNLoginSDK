@@ -5,4 +5,4 @@
 ## 目录介绍：
 ## Resource：源码，framework：库文件，bundle：资源文件，LNLoginDemo：测试Demo
 
-[1]: http://www.jianshu.com/writer#/notebooks/8272505/notes/7348602
+[1]: http://www.jianshu.com/p/734341f7c242
