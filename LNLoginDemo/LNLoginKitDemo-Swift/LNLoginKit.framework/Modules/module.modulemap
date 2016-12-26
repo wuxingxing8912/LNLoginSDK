@@ -1,0 +1,10 @@
+framework module LNLoginKit {
+  umbrella header "LNLoginKit.h"
+
+  export *
+  module * { export * }
+}
+
+module LNLoginKit.Swift {
+    header "LNLoginKit-Swift.h"
+}

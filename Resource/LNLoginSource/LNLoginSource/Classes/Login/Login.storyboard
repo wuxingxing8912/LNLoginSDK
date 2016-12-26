@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="pOd-A2-dGM">
+            <objects>
+                <viewController storyboardIdentifier="LoginView" id="pka-1F-NGw" customClass="LoginViewController" customModule="LNLoginSource" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SHi-b8-rQy"/>
+                        <viewControllerLayoutGuide type="bottom" id="7MO-jN-F0a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="24t-gF-or2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="admin" borderStyle="roundedRect" placeholder="用户名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OXI-wo-sBv">
+                                <rect key="frame" x="84" y="100" width="241" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" borderStyle="roundedRect" placeholder="密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uug-qb-BHg">
+                                <rect key="frame" x="84" y="140" width="241" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oa3-Up-rS2">
+                                <rect key="frame" x="50" y="220" width="275" height="40"/>
+                                <color key="backgroundColor" red="0.27450980390000002" green="0.59607843140000005" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="0F2-Pu-XOt"/>
+                                </constraints>
+                                <state key="normal" title="登录">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="login:" destination="pka-1F-NGw" eventType="touchUpInside" id="pch-4Z-SZX"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ln_username" translatesAutoresizingMaskIntoConstraints="NO" id="5fB-zP-xU6">
+                                <rect key="frame" x="50" y="103" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="mIk-wb-Ctv"/>
+                                    <constraint firstAttribute="height" constant="24" id="nOE-Ls-0AA"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ln_password" translatesAutoresizingMaskIntoConstraints="NO" id="CjR-px-s77">
+                                <rect key="frame" x="50" y="143" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="UGR-W7-5bb"/>
+                                    <constraint firstAttribute="height" constant="24" id="kqF-in-T8Y"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5fB-zP-xU6" firstAttribute="leading" secondItem="24t-gF-or2" secondAttribute="leading" constant="50" id="1Bt-1w-USQ"/>
+                            <constraint firstItem="CjR-px-s77" firstAttribute="leading" secondItem="24t-gF-or2" secondAttribute="leading" constant="50" id="7oe-9r-Uql"/>
+                            <constraint firstAttribute="trailing" secondItem="OXI-wo-sBv" secondAttribute="trailing" constant="50" id="Iai-bI-09y"/>
+                            <constraint firstItem="CjR-px-s77" firstAttribute="centerY" secondItem="Uug-qb-BHg" secondAttribute="centerY" id="KVs-hp-OJH"/>
+                            <constraint firstItem="Uug-qb-BHg" firstAttribute="top" secondItem="OXI-wo-sBv" secondAttribute="bottom" constant="10" id="M9z-TG-ZLl"/>
+                            <constraint firstItem="oa3-Up-rS2" firstAttribute="leading" secondItem="24t-gF-or2" secondAttribute="leading" constant="50" id="N5P-yq-gsb"/>
+                            <constraint firstItem="oa3-Up-rS2" firstAttribute="top" secondItem="Uug-qb-BHg" secondAttribute="bottom" constant="50" id="PtS-3b-mZ1"/>
+                            <constraint firstItem="5fB-zP-xU6" firstAttribute="centerY" secondItem="OXI-wo-sBv" secondAttribute="centerY" id="V5T-aG-SDI"/>
+                            <constraint firstAttribute="trailing" secondItem="oa3-Up-rS2" secondAttribute="trailing" constant="50" id="Ybv-Yy-ssN"/>
+                            <constraint firstItem="OXI-wo-sBv" firstAttribute="leading" secondItem="5fB-zP-xU6" secondAttribute="trailing" constant="10" id="dHu-qL-diP"/>
+                            <constraint firstItem="Uug-qb-BHg" firstAttribute="leading" secondItem="CjR-px-s77" secondAttribute="trailing" constant="10" id="fax-sn-Oxs"/>
+                            <constraint firstAttribute="trailing" secondItem="Uug-qb-BHg" secondAttribute="trailing" constant="50" id="nI7-hL-vMd"/>
+                            <constraint firstItem="OXI-wo-sBv" firstAttribute="top" secondItem="SHi-b8-rQy" secondAttribute="bottom" constant="80" id="rCI-7Z-TRq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="OXI-wo-sBv" id="jZO-PA-Png"/>
+                        <outlet property="passwordTextFIeld" destination="Uug-qb-BHg" id="xun-WM-3up"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="am2-to-pgq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="432.80000000000001" y="-229.83508245877064"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ln_password" width="24" height="24"/>
+        <image name="ln_username" width="24" height="24"/>
+    </resources>
+</document>
