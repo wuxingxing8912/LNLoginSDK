@@ -4,5 +4,6 @@
 
 ## 目录介绍：
 ## Resource：源码，framework：库文件，bundle：资源文件，LNLoginDemo：测试Demo
+## Xcode版本：8.2 Swift版本：3.0
 
 [1]: http://www.jianshu.com/p/734341f7c242
