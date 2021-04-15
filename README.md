@@ -1,6 +1,6 @@
 # Xcode 制作Swift和OC混编SDK
 
-## 简介：通过一个简单登录SDK，介绍Swift和OC混编下如何打包和调用SDK，[简书链接][1]
+## 简介：通过一个简单登录SDK，介绍Swift和OC混编下如何打包和调用SDK，详细介绍见[简书链接][1]
 
 ## 目录介绍：
 ## Resource：源码，framework：库文件，bundle：资源文件，LNLoginDemo：测试Demo
